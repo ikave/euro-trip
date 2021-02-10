@@ -1,15 +1,27 @@
 'use strict';
-var pageHeader = document.querySelector('.page-header');
-var headerToggle = document.querySelector('.page-header__toggle');
+var noJs = document.querySelector('.no-js');
+noJs.classList.remove('no-js');
 
-pageHeader.classList.remove('page-header--nojs');
+var mainNav = document.querySelector('.main-nav');
+var mainNavToggle = document.querySelector('.main-nav__toggle');
+var menu = document.querySelector('.menu');
 
-headerToggle.addEventListener('click', function () {
-  if (pageHeader.classList.contains('page-header--closed')) {
-    pageHeader.classList.remove('page-header--closed');
-    pageHeader.classList.add('page-header--opened');
+// mainNav.classList.remove('page-header--nojs');
+
+mainNavToggle.addEventListener('click', function () {
+  if (mainNav.classList.contains('main-nav--closed')) {
+    mainNav.classList.remove('main-nav--closed');
+    mainNav.classList.add('main-nav--opened');
+    mainNavToggle.classList.remove('main-nav__toggle--closed');
+    mainNavToggle.classList.add('main-nav__toggle--opened');
+    menu.classList.remove('menu--closed');
+    menu.classList.add('menu--opened');
   } else {
-    pageHeader.classList.add('page-header--closed');
-    pageHeader.classList.remove('page-header--opened');
+    mainNav.classList.add('main-nav--closed');
+    mainNav.classList.remove('main-nav--opened');
+    mainNavToggle.classList.add('main-nav__toggle--closed');
+    mainNavToggle.classList.remove('main-nav__toggle--opened');
+    menu.classList.add('menu--closed');
+    menu.classList.remove('menu--opened');
   }
 });

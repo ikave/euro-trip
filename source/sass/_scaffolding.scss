@@ -1,5 +1,24 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.page {
+  box-sizing: border-box;
+}
+
 .page-body {
+  min-width: $small-width-min;
   margin: 0;
   padding: 0;
   font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.466667px;
 }
+
+// .visually-hidden {
+
+// }

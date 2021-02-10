@@ -1,0 +1,13 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  min-height: 99px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (max-width: $medium-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    min-height: auto;
+  }
+}
