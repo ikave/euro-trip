@@ -1,5 +1,14 @@
 .footer-travels {
   width: 390px;
+  margin-right: 89px;
+  border-right: 1px solid $gray;
+
+  @media (max-width: $small-width) {
+    width: 100%;
+    border-bottom: 1px solid $gray;
+    border-right: none;
+    text-align: center;
+  }
 }
 
 .footer-travels__lists,
@@ -11,6 +20,11 @@
 
 .footer-travels__lists {
   display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $small-width) {
+    justify-content: center;
+  }
 }
 
 .footer-travels__column {
@@ -21,12 +35,26 @@
   &:nth-child(2) {
     width: 124px;
   }
+
+  @media (max-width: $small-width) {
+    width: 50%;
+    text-align: center;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      width: 50%;
+    }
+  }
 }
 
 .footer-travels__link {
   color: rgba($dark, 0.5);
   font-size: 14px;
-  line-height: normal;
+  line-height: 19px;
   text-decoration: none;
 
   &:hover,

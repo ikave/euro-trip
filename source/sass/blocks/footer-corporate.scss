@@ -1,4 +1,19 @@
 .footer-corporate {
-  max-width: 371px;
+  max-width: 370px;
   padding-left: 49px;
+  border-left: 1px solid $gray;
+
+  @media (max-width: 1200px) {
+    display: block;
+    width: 100%;
+    max-width: none;
+    padding-top: 30px;
+    border-top: 1px solid $gray;
+    border-left: none;
+    text-align: center;
+  }
+
+  @media (max-width: $small-width) {
+    padding-left: 0;
+  }
 }

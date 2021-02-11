@@ -1,14 +1,39 @@
 .footer-contacts {
-  width: 300px;
-  margin-left: auto;
+  @media (max-width: $small-width) {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 }
 
 .footer-contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (max-width: $small-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-contacts__item {
-  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.footer-contacts__text {
+  &--hidden {
+    display: none;
+  }
+
+  @media (max-width: $small-width) {
+    display: none;
+
+    &--hidden {
+      display: block;
+    }
+  }
 }
