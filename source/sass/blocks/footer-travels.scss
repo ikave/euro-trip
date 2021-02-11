@@ -1,0 +1,40 @@
+.footer-travels {
+  width: 390px;
+}
+
+.footer-travels__lists,
+.footer-travels__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-travels__lists {
+  display: flex;
+}
+
+.footer-travels__column {
+  &:nth-child(1) {
+    width: 130px;
+  }
+
+  &:nth-child(2) {
+    width: 124px;
+  }
+}
+
+.footer-travels__link {
+  color: rgba($dark, 0.5);
+  font-size: 14px;
+  line-height: normal;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $dark;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
+}
