@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 
@@ -29,89 +30,116 @@
 
   &::before,
   &::after {
-    content: "";
+    content: '';
     position: absolute;
+  }
+
+  &--closed {
+    &::before {
+      display: block;
+      width: 22.5px;
+      height: 1px;
+      background-color: $white;
+      box-shadow: 0 -6px $white, 0 6px $white;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
   &--opened {
     background-color: transparent;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: block;
+      width: 23px;
+      height: 23px;
+      background-image: url('../../img/close.svg');
+      background-repeat: no-repeat;
+    }
   }
 
   @media (max-width: $medium-width) {
     display: flex;
     z-index: 1;
-  }
-}
 
-.main-nav--closed .main-nav__toggle--closed {
-  &::before {
-    display: block;
-    width: 22.5px;
-    height: 1px;
-    background-color: $white;
-    box-shadow: 0 -6px $white, 0 6px $white;
+    &--nojs {
+      display: none;
+    }
   }
-
-  &::after {
-    display: none;
-  }
-}
-
-.main-nav--opened .main-nav__toggle--opened {
-  &::before {
-    display: none;
-  }
-
-  &::after {
-    display: block;
-    width: 22px;
-    height: 22px;
-    background-image: url('../../img/close.svg');
-    background-repeat: no-repeat;
-  }
-}
-
-.no-js .main-nav__toggle {
-  display: none;
 }
 
 .main-nav__phone {
-  position: relative;
   display: flex;
   align-items: center;
   margin-left: 54px;
-  margin-right: 15px;
-  padding-left: 36px;
+  padding-right: 15px;
   color: $dark;
   font-size: 18px;
   line-height: 32px;
   font-weight: 500;
   letter-spacing: normal;
-
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-image: url('../img/phone.svg');
-    background-repeat: no-repeat;
-  }
+  text-decoration: none;
 
   &:hover,
   &:focus {
     color: $accent;
 
-    &::before {
-      background-image: url('../img/phone-hover.svg');
+    & .main-nav__phone-icon {
+      stroke: $accent;
+    }
+
+    & .main-nav__phone-text {
+      &::before {
+        background-color: $accent;
+      }
     }
   }
 
   &:active {
     color: rgba($accent, 0.4);
+
+    & .main-nav__phone-icon {
+      stroke: rgba($accent, 0.4);
+    }
+
+    & .main-nav__phone-text {
+      &::before {
+        background-color: rgba($accent, 0.4);
+      }
+    }
+  }
+
+  & .main-nav__phone-icon {
+    fill: transparent;
+    stroke: $dark;
   }
 
   @media (max-width: $medium-width) {
     display: none;
   }
+}
+
+.main-nav__phone-icon {
+  margin-right: 6px;
+}
+
+.main-nav__phone-text {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $dark;
+  }
+
 }

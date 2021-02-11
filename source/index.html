@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page no-js" lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +9,15 @@
 </head>
 <body class="page-body">
   <header class="page-header">
-    <nav class="main-nav main-nav--closed">
+    <nav class="main-nav">
       <a class="logo">
         <picture>
           <source media="max-width">
           <img class="logo__image" src="img/logo.svg" width="57" height="22" alt="Логотип тур-оператора Way - Путешествие по Европе">
         </picture>
       </a>
-      <button class="main-nav__toggle main-nav__toggle--closed" aria-label="Показать меню"></button>
-      <ul class="menu menu--closed">
+      <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" aria-label="Показать меню"></button>
+      <ul class="menu menu--closed menu--nojs">
         <li class="menu__item">
           <a href="#" class="menu__link">О путешествии</a>
         </li>
@@ -25,7 +25,12 @@
           <a href="#" class="menu__link">Цены</a>
         </li>
       </ul>
-      <a class="main-nav__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+      <a class="main-nav__phone" href="tel:+749978468446">
+        <svg class="main-nav__phone-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <span class="main-nav__phone-text">+7 (499) -784-684-46</span>
+      </a>
     </nav>
   </header>
   <main>
