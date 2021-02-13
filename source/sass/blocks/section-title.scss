@@ -1,0 +1,37 @@
+.section-title {
+  margin: 0;
+  padding-bottom: 34px;
+  position: relative;
+  color: $dark;
+  font-size: 55px;
+  line-height: 80px;
+  font-weight: 600;
+  letter-spacing: -1.25px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 175px;
+    height: 4px;
+    background-color: $accent;
+  }
+
+  &--big-line {
+    &:before {
+      width: 228px;
+    }
+  }
+
+  @media (max-width: $medium-width) {
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
