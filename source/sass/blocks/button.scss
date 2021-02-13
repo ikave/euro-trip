@@ -1,0 +1,46 @@
+.button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 340px;
+  padding: 27px 40px;
+  border: none;
+  color: $white;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background-color: $accent;
+  cursor: pointer;
+
+  &--icon {
+    &::after {
+      content: '';
+
+      width: 15px;
+      height: 15px;
+      background-image: url('../../img/arrow-right.svg');
+    }
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-hover;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  @media (max-width: $medium-width) {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 10px;
+    font-weight: 500;
+    padding-top: 17px;
+    padding-bottom: 16px;
+    text-transform: uppercase;
+  }
+}
