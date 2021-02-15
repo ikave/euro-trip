@@ -108,35 +108,42 @@
       </ul>
     </section>
 
+
     <div class="content">
-      <div class="content__wrapper">
-        <ul class="content__actions tabs">
+      <div class="content__actions">
+        <ul class="tabs">
           <li class="tabs__item"><a href="#" class="tabs__link tabs__link--active">Греция</a></li>
           <li class="tabs__item"><a href="#" class="tabs__link">Албания</a></li>
           <li class="tabs__item"><a href="#" class="tabs__link">Македония</a></li>
           <li class="tabs__item"><a href="#" class="tabs__link">Черногория</a></li>
           <li class="tabs__item"><a href="#" class="tabs__link">Хорватия</a></li>
         </ul>
+      </div>
 
-        <div class="slide">
-          <article class="about">
-            <h2 class="section-title about__title">Греция</h2>
-            <p class="section-description about__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
-            <button class="button about__button">купить тур сейчас</button>
-          </article>
+      <div class="content__wrapper">
+        <div class="slider">
 
-          <section class="review review--greece">
-            <div class="review__wrapper">
-              <h3 class="review__title">Отзывы</h3>
-              <blockquote class="review__content">
-                <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-                <div class="review__author">
-                  <img class="review__author-avatar" src="img/user-avatar-1.png" alt="Влада Голицина">
-                  <cite class="review__author-name">Влада Голицина</cite>
-                </div>
-              </blockquote>
-            </div>
-          </section>
+          <div class="slider__item">
+            <article class="about">
+              <h2 class="section-title about__title">Греция</h2>
+              <p class="section-description about__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
+              <button class="button about__button">купить тур сейчас</button>
+            </article>
+
+            <section class="review review--greece">
+              <div class="review__wrapper">
+                <h3 class="review__title">Отзывы</h3>
+                <blockquote class="review__content">
+                  <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
+                  <div class="review__author">
+                    <img class="review__author-avatar" src="img/user-avatar-1.png" alt="Влада Голицина">
+                    <cite class="review__author-name">Влада Голицина</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
         </div>
 
         <section class="price">
@@ -145,20 +152,15 @@
             <p class="section-description price__description">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
             <div class="price__contacts">
               <p class="price__subtitle">Свяжитесь с нами</p>
-              <a class="price__phone contact" href="tel:+749978468446">
-                <span class="contact__icon contact__icon--phone">
-                  <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
-                </span>
-                <span class="contact__text">+7 (499) -784-684-46</span>
-              </a>
+              <a class="price__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
             </div>
           </div>
           <ul class="price__list">
             <li class="price__item card">
-              <p class="card__title">Комплексный <b class="card__cost">$1999</b></p>
-              <p class="card__description">Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет</p>
+              <div class="card__header">
+                <p class="card__header-title">Комплексный <b class="card__header-cost">$1999</b></p>
+                <p class="card__header-description">Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет</p>
+              </div>
               <ul class="card__list">
                 <li class="card__item">
                   <svg class="card__check" width="22" height="22" xmlns="http://www.w3.org/2000/svg">
@@ -188,8 +190,10 @@
               <button class="card__button button">купить тур сейчас</button>
             </li>
             <li class="price__item card">
-              <p class="card__title">Экономный <b class="card__cost">$1399</b></p>
-              <p class="card__description">Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет</p>
+              <div class="card__header">
+                <p class="card__header-title">Экономный <b class="card__header-cost">$1399</b></p>
+                <p class="card__header-description">Ознакомьтесь с перечнем того, что&nbsp;входит в данный пакет</p>
+              </div>
               <ul class="card__list">
                 <li class="card__item">
                   <svg class="card__check" width="22" height="22" xmlns="http://www.w3.org/2000/svg">

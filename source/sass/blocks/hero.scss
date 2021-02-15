@@ -114,4 +114,8 @@
 
 .hero__button {
   width: 340px;
+
+  @media (max-width: $medium-width) {
+    max-width: 250px;
+  }
 }

@@ -8,6 +8,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  z-index: 1;
 
   @media (max-width: $medium-width) {
     width: 100%;
@@ -26,6 +27,7 @@
   padding: 0;
   background-color: $accent;
   border: 0;
+  z-index: 1;
   cursor: pointer;
 
   &::before,

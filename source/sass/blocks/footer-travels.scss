@@ -3,6 +3,10 @@
   margin-right: 89px;
   border-right: 1px solid $gray;
 
+  @media (max-width: $medium-width) {
+    width: 395px;
+  }
+
   @media (max-width: $small-width) {
     width: 100%;
     border-bottom: 1px solid $gray;
@@ -36,6 +40,12 @@
     width: 124px;
   }
 
+  @media (max-width: $medium-width) {
+    &:nth-child(1) {
+      width: 125px;
+    }
+  }
+
   @media (max-width: $small-width) {
     width: 50%;
     text-align: center;
@@ -55,6 +65,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .footer-travels__link {

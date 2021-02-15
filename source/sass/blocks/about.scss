@@ -1,18 +1,41 @@
 .about {
   padding-top: 15px;
   max-width: 370px;
+
+  @media (max-width: $medium-width) {
+    width: 100%;
+    max-width: none;
+    padding-top: 33px;
+    padding-bottom: 30px;
+  }
 }
 
 .about__title {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 22px;
+  }
 }
 
 .about__description {
   margin: 0;
   margin-bottom: 50px;
+
+  @media (max-width: $medium-width) {
+    margin-bottom: 18px;
+    padding-left: 21px;
+    padding-right: 21px;
+    text-align: center;
+  }
 }
 
 .about__button {
-  width: auto;
+  // width: auto;
+
+  @media (max-width: $medium-width) {
+    margin: 0 auto;
+    display: block;
+  }
 }
