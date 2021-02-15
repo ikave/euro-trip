@@ -1,21 +1,24 @@
 .button {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 340px;
+  display: inline-block;
   padding: 27px 40px;
   border: none;
   color: $white;
   font: inherit;
   font-size: 12px;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 2px;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: $accent;
   cursor: pointer;
 
   &--icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
     &::after {
       content: '';
 

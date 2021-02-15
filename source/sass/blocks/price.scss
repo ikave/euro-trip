@@ -1,0 +1,85 @@
+.price {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 135px;
+}
+
+.price__wrapper {
+  max-width: 300px;
+  margin-right: -11px;
+  padding-top: 20px;
+}
+
+.price__title {
+  margin-bottom: 30px;
+  letter-spacing: normal;
+}
+
+.price__description {
+  margin-bottom: 60px;
+  line-height: 27px;
+  letter-spacing: normal;
+}
+
+.price__contacts {
+  margin-left: -43px;
+  padding-right: 43px;
+}
+
+.price__subtitle {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: right;
+}
+
+.price__phone {
+  padding-left: 15px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 400;
+  justify-content: flex-end;
+
+  & .contact__text {
+    &::before {
+      display: none;
+    }
+  }
+
+  & .contact__icon {
+    stroke: $accent;
+    margin-right: 20px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+}
+
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.price__item {
+  margin-right: 30px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}

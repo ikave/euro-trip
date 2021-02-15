@@ -1,0 +1,79 @@
+.slide {
+  padding-top: 80px;
+  padding-bottom: 240px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review {
+  width: 700px;
+  min-height: 596px;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 430px 596px;
+  background-position: top left;
+  color: $text;
+
+  &--greece {
+    background-image: url('../../img/review-bg-greece.jpg');
+  }
+}
+
+.review__wrapper {
+  max-width: 382px;
+  margin-left: auto;
+  padding: 30px;
+  background-color: $white;
+}
+
+.review__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-bottom: 11px;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.69px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 68px;
+    height: 1px;
+    background-color: $accent;
+  }
+}
+
+.review__content {
+  margin: 0;
+}
+
+.review__text {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.41px;
+}
+
+.review__author {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.review__author-avatar {
+  margin-right: 16px;
+}
+
+.review__author-name {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.47px;
+}

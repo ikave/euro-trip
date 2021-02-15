@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.form__item {
+  position: relative;
+
+}
+
+.form__input {
+  width: 269px;
+  height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid rgba($dark, 0.3);
+  font: inherit;
+
+  &::placeholder {
+    color: $dark;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+.form__input-phone {
+  padding-left: 50px;
+}
+
+.form__lable-phone {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  padding-left: 9px;
+  color: $dark;
+
+  &::before {
+    content: '*';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    color: $accent;
+  }
+}
+
+.form__submit {
+  padding: 15px 39px;
+  margin: 0 auto;
+}

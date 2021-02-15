@@ -51,6 +51,12 @@
   }
 }
 
+.footer-travels__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
 .footer-travels__link {
   color: rgba($dark, 0.5);
   font-size: 14px;

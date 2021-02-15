@@ -95,7 +95,7 @@
 .hero__text {
   max-width: 376px;
   margin: 0;
-  margin-bottom: 39px;
+  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: -0.47px;
@@ -109,4 +109,9 @@
   @media (max-width: $small-width) {
     color: $dark;
   }
+}
+
+
+.hero__button {
+  width: 340px;
 }

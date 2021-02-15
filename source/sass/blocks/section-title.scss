@@ -1,6 +1,6 @@
 .section-title {
   margin: 0;
-  padding-bottom: 34px;
+  padding-bottom: 22px;
   position: relative;
   color: $dark;
   font-size: 55px;
@@ -19,6 +19,8 @@
   }
 
   &--big-line {
+    padding-bottom: 33px;
+
     &:before {
       width: 228px;
     }

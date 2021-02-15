@@ -8,9 +8,11 @@
 @import 'scaffolding';
 
 // blocks
+@import 'blocks/visually-hidden';
 @import 'blocks/page-header';
 @import 'blocks/contact';
 @import 'blocks/main-nav';
+@import 'blocks/button';
 @import 'blocks/logo';
 @import 'blocks/menu';
 @import 'blocks/hero';
@@ -18,8 +20,15 @@
 @import 'blocks/section-description';
 @import 'blocks/tours';
 @import 'blocks/tour';
+@import 'blocks/content';
+@import 'blocks/tabs';
+@import 'blocks/about';
+@import 'blocks/review';
+@import 'blocks/price';
+@import 'blocks/card';
+@import 'blocks/feedback-form';
+@import 'blocks/form';
 @import 'blocks/page-footer';
 @import 'blocks/footer-travels';
 @import 'blocks/footer-corporate';
 @import 'blocks/footer-contacts';
-@import 'blocks/button';

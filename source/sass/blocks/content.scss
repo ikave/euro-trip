@@ -1,0 +1,12 @@
+.content {
+  background-image: url('../../img/evropa-bg.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.content__wrapper {
+  max-width: $large-width;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}

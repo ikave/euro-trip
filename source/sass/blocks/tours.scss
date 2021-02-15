@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 15px;
   padding-top: 200px;
-  overflow: hidden;
+  padding-bottom: 97px;
 
   @media (max-width: $medium-width) {
     padding-top: 80px;
@@ -18,6 +18,7 @@
 
 .tours__title {
   margin-bottom: 30px;
+  max-width: 400px;
 }
 
 .tours__desc {
@@ -37,8 +38,10 @@
   justify-content: center;
   width: 100%;
   margin: 0;
+  margin-top: -101px;
   padding: 0;
   list-style: none;
+  overflow: hidden;
 
   @media (max-width: $small-width) {
     flex-direction: column;
@@ -49,32 +52,33 @@
 .tours__item {
   margin: 0;
   margin-right: 60px;
-  margin-bottom: 101px;
+  margin-top: 101px;
 
   &:nth-child(3n) {
     margin-right: 0;
   }
 
   &:last-child {
+    margin-left: 60px;
     margin-right: 0;
   }
 
-  @media (max-width: $large-width) {
-    margin-right: 60px;
+  // @media (max-width: $large-width) {
+  //   margin-right: 60px;
 
-    &:nth-child(2n) {
-      margin-right: 0;
-    }
+  //   &:nth-child(2n) {
+  //     margin-right: 0;
+  //   }
 
-    &:nth-child(3n) {
-      margin-right: 60px;
-    }
+  //   &:nth-child(3n) {
+  //     margin-right: 60px;
+  //   }
 
-    &:last-child {
-      margin-right: 0;
-    }
+  //   &:last-child {
+  //     margin-right: 0;
+  //   }
 
-  }
+  // }
 
   @media (max-width: $medium-width) {
     margin: 0;
