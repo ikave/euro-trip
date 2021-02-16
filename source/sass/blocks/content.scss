@@ -19,6 +19,10 @@
   @media (max-width: $medium-width) {
     padding-left: 38px;
   }
+
+  @media (max-width: $small-width) {
+    padding-left: 16px;
+  }
 }
 
 .content__wrapper {

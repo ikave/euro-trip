@@ -31,6 +31,14 @@
   }
 }
 
+.footer-travels__list {
+  @media (max-width: $small-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer-travels__column {
   &:nth-child(1) {
     width: 130px;

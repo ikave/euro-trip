@@ -1,13 +1,12 @@
-.slider {
-
-}
-
 .slider__item {
-  .slide {
-    padding-top: 80px;
-    padding-bottom: 240px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $medium-width) {
+    padding-top: 0;
+    padding-bottom: 50px;
   }
 }

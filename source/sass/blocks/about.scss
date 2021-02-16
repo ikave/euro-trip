@@ -8,6 +8,11 @@
     padding-top: 33px;
     padding-bottom: 30px;
   }
+
+  @media (max-width: $small-width) {
+    padding-top: 22px;
+    padding-bottom: 49px;
+  }
 }
 
 .about__title {

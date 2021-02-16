@@ -13,26 +13,22 @@
     border: 1px solid $accent;
     box-shadow: inset 0 0 0 2px $accent;
 
-    & .card__title {
+    & .card__header-title {
       color: $accent;
     }
 
-    & .card__description {
-      &::before {
-        background-color: $accent;
-      }
+    & .card__header {
+      border-color: $accent;
     }
 
     & .card__check {
-      fill: $accent;
+      fill: $dark;
     }
   }
 
   @media (max-width: $medium-width) {
     max-width: 288px;
     padding-top: 33px;
-    // padding-left: 20px;
-    // padding-right: 20px;
     padding-bottom: 0;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -42,12 +38,14 @@
 .card__header {
   margin-left: 30px;
   margin-right: 30px;
-  padding-bottom: 29px;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
   border-bottom: 1px solid rgba($dark, 0.3);
 
   @media (max-width: $medium-width) {
     padding-bottom: 8px;
     text-align: center;
+    margin-bottom: 0;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -124,11 +122,18 @@
   position: absolute;
   left: -4px;
   top: 5px;
-  fill: $dark;
+  fill: $accent;
 }
 
 .card__button {
-  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
   margin-top: auto;
   text-align: center;
+
+  @media (max-width: $medium-width) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

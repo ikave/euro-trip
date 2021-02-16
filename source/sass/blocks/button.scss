@@ -46,4 +46,8 @@
     padding-bottom: 16px;
     text-transform: uppercase;
   }
+
+  @media (max-width: $small-width) {
+    width: 288px;
+  }
 }

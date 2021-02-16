@@ -19,5 +19,8 @@
   font-size: 16px;
   line-height: 1.75;
   font-weight: 400;
-  // letter-spacing: -0.03em;
+
+  &--menu-open {
+    overflow: hidden;
+  }
 }

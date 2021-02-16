@@ -6,6 +6,10 @@
     min-height: 50px;
     padding-left: 21px;
   }
+
+  @media (max-width: $small-width) {
+    padding-left: 16px;
+  }
 }
 
 .logo__image {

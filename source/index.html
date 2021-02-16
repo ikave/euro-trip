@@ -11,27 +11,22 @@
   <header class="page-header">
     <nav class="main-nav">
       <a class="logo">
-        <picture>
-          <source media="max-width">
-          <img class="logo__image" src="img/logo.svg" width="57" height="22" alt="Логотип тур-оператора Way - Путешествие по Европе">
-        </picture>
+        <img class="logo__image" src="img/logo.svg" width="57" height="22" alt="Логотип тур-оператора Way - Путешествие по Европе">
       </a>
       <button class="main-nav__toggle main-nav__toggle--closed main-nav__toggle--nojs" aria-label="Показать меню"></button>
       <ul class="menu menu--closed menu--nojs">
         <li class="menu__item">
-          <a href="#" class="menu__link">О путешествии</a>
+          <a href="#tours" class="menu__link">О путешествии</a>
         </li>
         <li class="menu__item">
-          <a href="#" class="menu__link">Цены</a>
+          <a href="#price" class="menu__link">Цены</a>
         </li>
       </ul>
-      <a class="main-nav__phone contact contact--place-header" href="tel:+749978468446">
-        <span class="contact__icon contact__icon--phone">
-          <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>
-        </span>
-        <span class="contact__text">+7 (499) -784-684-46</span>
+      <a class="main-nav__phone" href="tel:+749978468446">
+        <svg class="main-nav__phone-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="img/sprite.svg#phone"></use>
+        </svg>
+        <span class="main-nav__phone-text">+7 (499) -784-684-46</span>
       </a>
     </nav>
   </header>
@@ -146,13 +141,18 @@
 
         </div>
 
-        <section class="price">
+        <section class="price" id="price">
           <div class="price__wrapper">
             <h2 class="section-title price__title">Цены</h2>
             <p class="section-description price__description">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
             <div class="price__contacts">
               <p class="price__subtitle">Свяжитесь с нами</p>
-              <a class="price__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
+              <a class="price__phone" href="tel:+749978468446">
+                <svg class="price__phone-icon" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
+                <span class="price__phone-text">+7 (499) -784-684-46</span>
+              </a>
             </div>
           </div>
           <ul class="price__list">
@@ -236,12 +236,12 @@
         <div class="feedback-form__wrapper">
           <p class="feedback-form__title">У Вас остались вопросы?</p>
           <p class="feedback-form__desc">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-          <form class="form" action="">
+          <form class="form" action="#" method="POST">
             <div class="form__inputs">
               <div class="form__item">
                 <label for="" class="visually-hidden">Введите 10 цифр номера</label>
                 <span class="form__lable-phone">+7</span>
-                <input type="phone" class="form__input form__input-phone" placeholder="Введите 10 цифр номера">
+                <input type="phone" class="form__input form__input-phone" placeholder="Введите 10 цифр номера" required>
               </div>
               <div class="form__item">
                 <label for="" class="visually-hidden">Ведите email</label>
@@ -324,6 +324,31 @@
     </section>
 
   </footer>
+
+  <!-- <section class="modal modal--form">
+    <div class="modal__content">
+      <h2 class="modal__title">Купить тур</h2>
+      <button class="modal__close" aria-label="Закрыть окно"></button>
+      <form class="form modal__form" action="#" method="POST">
+        <div class="form__inputs modal__inputs">
+          <div class="form__item modal__item">
+            <label for="" class="visually-hidden">Введите 10 цифр номера</label>
+            <span class="form__lable-phone">+7</span>
+            <input class="form__input form__input-phone modal__input" type="phone" placeholder="Введите 10 цифр номера" required>
+          </div>
+          <div class="form__item modal__item">
+            <label for="" class="visually-hidden">Ведите email</label>
+            <input class="form__input modal__input" type="email" placeholder="E-mail">
+          </div>
+        </div>
+        <button class="button modal__submit" type="submit">Отправить</button>
+      </form>
+    </div>
+  </section> -->
+  <!-- <section class="modal modal--success">
+    <h2 class="modal__title">Форма успешно отправлена, <br> спасибо! :)</h2>
+    <button class="modal__close" aria-label="Закрыть окно"></button>
+  </section> -->
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,26 +1,39 @@
 .feedback-form {
-  position: relative;
-  right: -13px;
   display: flex;
   max-width: $large-width;
   width: 100%;
   padding: 70px 15px;
-  margin: 0 auto;
+  margin: 0 auto 92px;
   color: $dark;
   background-image: url('../../img/form-bg.jpg');
   background-repeat: no-repeat;
   background-size: 844px 455px;
   background-position: 14px 0;
+  overflow: hidden;
+
+  @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+    background-image: url('../../img/form-bg@2x.jpg');
+  }
 
   @media (max-width: $medium-width) {
     right: 0;
     padding: 70px 0 75px;
     background-position: 0 0;
+    margin-bottom: 0;
+    background-size: cover;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-image: none;
+    background-color: $light-bg;
   }
 }
 
 .feedback-form__wrapper {
-  width: 656px;
+  max-width: 656px;
+  width: 100%;
   margin-left: auto;
   padding: 50px;
   border-radius: 5px;
@@ -29,6 +42,13 @@
 
   @media (max-width: $medium-width) {
     margin-right: auto;
+  }
+
+  @media (max-width: $small-width) {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: transparent;
+    box-shadow: none;
   }
 }
 
