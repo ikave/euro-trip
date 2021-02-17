@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Путешествие по Европе</title>
+  <link rel="preload" href="fonts/montserrat-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-500.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-600.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/montserrat-700.woff2" type="font/woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="page-body">
@@ -37,7 +41,7 @@
         <div class="hero__content">
           <h1 class="hero__title">Путешествие по Европе</h1>
           <p class="hero__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-          <a href="#tours" class="hero__button button button--icon">смотреть тур</a>
+          <a href="#content" class="hero__button button button--icon">смотреть тур</a>
         </div>
       </div>
     </section>
@@ -49,54 +53,64 @@
         <li class="tours__item tour">
           <h3 class="tour__title">Греция</h3>
           <picture>
-          <source media="(max-width: 1023px)" srcset="img/tour-1-tablet.jpg 1x, img/tour-1-tablet@2x.jpg 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-1-tablet.webp 1x, img/tour-1-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tour-1.webp 1x, img/tour-1@2x.webp 2x">
+            <source media="(max-width: 1023px)" srcset="img/tour-1-tablet.jpg 1x, img/tour-1-tablet@2x.jpg 2x">
             <img class="tour__image" src="img/tour-1.jpg" srcset="img/tour-1@2x.jpg" alt="Греция">
           </picture>
-          <a class="tour__link" href="#">
+          <a class="tour__link" href="#greece">
             <span class="tour__button">смотреть подробнее</span>
           </a>
         </li>
         <li class="tours__item tour">
           <h3 class="tour__title">Албания</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-2-tablet.webp 1x, img/tour-2-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tour-2.webp 1x, img/tour-2@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tour-2-tablet.jpg 1x, img/tour-2-tablet@2x.jpg 2x">
             <img class="tour__image" src="./img/tour-2.jpg" srcset="img/tour-2@2x.jpg" alt="Албания">
           </picture>
           <button class="tour__button" type="button">смотреть подробнее</button>
-          <a class="tour__link" href="#">
+          <a class="tour__link" href="#albania">
             <span class="tour__button">смотреть подробнее</span>
           </a>
         </li>
         <li class="tours__item tour">
           <h3 class="tour__title">Македония</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-3-tablet.webp 1x, img/tour-3-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tour-3.webp 1x, img/tour-3@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tour-3-tablet.jpg 1x, img/tour-3-tablet@2x.jpg 2x">
             <img class="tour__image" src="./img/tour-3.jpg" srcset="img/tour-3@2x.jpg" alt="Македония">
           </picture>
           <button class="tour__button" type="button">смотреть подробнее</button>
-          <a class="tour__link" href="#">
+          <a class="tour__link" href="#macedonia">
             <span class="tour__button">смотреть подробнее</span>
           </a>
         </li>
         <li class="tours__item tour">
           <h3 class="tour__title">Черногория</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-4-tablet.webp 1x, img/tour-4-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tour-4.webp 1x, img/tour-4@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tour-4-tablet.jpg 1x, img/tour-4-tablet@2x.jpg 2x">
             <img class="tour__image" src="./img/tour-4.jpg" srcset="img/tour-4@2x.jpg" alt="Черногория">
           </picture>
           <button class="tour__button" type="button">смотреть подробнее</button>
-          <a class="tour__link" href="#">
+          <a class="tour__link" href="#montenegro">
             <span class="tour__button">смотреть подробнее</span>
           </a>
         </li>
         <li class="tours__item tour">
           <h3 class="tour__title">Хорватия</h3>
           <picture>
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/tour-5-tablet.webp 1x, img/tour-5-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/tour-5.webp 1x, img/tour-5@2x.webp 2x">
             <source media="(max-width: 1023px)" srcset="img/tour-5-tablet.jpg 1x, img/tour-5-tablet@2x.jpg 2x">
             <img class="tour__image" src="./img/tour-5.jpg" srcset="img/tour-5@2x.jpg" alt="Хорватия">
           </picture>
           <button class="tour__button" type="button">смотреть подробнее</button>
-          <a class="tour__link" href="#">
+          <a class="tour__link" href="#croatia">
             <span class="tour__button">смотреть подробнее</span>
           </a>
         </li>
@@ -104,7 +118,7 @@
     </section>
 
 
-    <div class="content">
+    <div class="content" id="content">
       <div class="content__actions">
         <ul class="tabs">
           <li class="tabs__item"><a href="#" class="tabs__link tabs__link--active">Греция</a></li>
@@ -118,7 +132,7 @@
       <div class="content__wrapper">
         <div class="slider">
 
-          <div class="slider__item">
+          <div class="slider__item slider__item--active" id="greece">
             <article class="about">
               <h2 class="section-title about__title">Греция</h2>
               <p class="section-description about__description">На севере Греции находится один из крупнейших комплексов монастырей, расположенных на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы, достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях Метеоры.</p>
@@ -131,8 +145,92 @@
                 <blockquote class="review__content">
                   <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
                   <div class="review__author">
-                    <img class="review__author-avatar" src="img/user-avatar-1.png" alt="Влада Голицина">
+                    <img class="review__author-avatar" src="img/user-avatar-1.png" srcset="img/user-avatar-1.png 2x" alt="Влада Голицина">
                     <cite class="review__author-name">Влада Голицина</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
+          <div class="slider__item" id="albania">
+            <article class="about">
+              <h2 class="section-title about__title">Албания</h2>
+              <p class="section-description about__description">В Албании мы посетим Курорт Ксамиль. Этот курорт поразит вас чистейшей водой и удивительным пляжем. Вначале кажется, что на пляже вас встречает обычный, правда невероятно белоснежный и слишком крупный песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого состояния.</p>
+              <button class="button about__button">купить тур сейчас</button>
+            </article>
+
+            <section class="review review--albania">
+              <div class="review__wrapper">
+                <h3 class="review__title">Отзывы</h3>
+                <blockquote class="review__content">
+                  <p class="review__text">Замечательный курорт, обязательно стоит посетить. В следующий раз возьму с собой сестру, чтобы тоже смогла вкусить все красоты природы :)</p>
+                  <div class="review__author">
+                    <img class="review__author-avatar" src="img/user-avatar-2.png" srcset="img/user-avatar-2.png 2x" alt="Маришка">
+                    <cite class="review__author-name">Маришка</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
+          <div class="slider__item" id="macedonia">
+            <article class="about">
+              <h2 class="section-title about__title">Македония</h2>
+              <p class="section-description about__description">В Македонии нашей целью будет посетить Палаошник, который расположился в удивительно красивой лесистой местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев Камен где находится  археологический памятник Кокино в длину около 100 метров.</p>
+              <button class="button about__button">купить тур сейчас</button>
+            </article>
+
+            <section class="review review--macedonia">
+              <div class="review__wrapper">
+                <h3 class="review__title">Отзывы</h3>
+                <blockquote class="review__content">
+                  <p class="review__text">Я бы сказал необычное старое здание. В архитектуре я не разбираюсь, но подъем в гору был очень веселым так как люди оказались легкими и заводными. Красота природы впечатлила, особенно после долгого пути в гору.</p>
+                  <div class="review__author">
+                    <img class="review__author-avatar" src="img/user-avatar-3.png" srcset="img/user-avatar-3.png 2x" alt="Михаил Кузьмин">
+                    <cite class="review__author-name">Михаил Кузьмин</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
+          <div class="slider__item" id="montenegro">
+            <article class="about">
+              <h2 class="section-title about__title">Черногория</h2>
+              <p class="section-description about__description">Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.</p>
+              <button class="button about__button">купить тур сейчас</button>
+            </article>
+
+            <section class="review review--montenegro">
+              <div class="review__wrapper">
+                <h3 class="review__title">Отзывы</h3>
+                <blockquote class="review__content">
+                  <p class="review__text">Неописуемой красоты каньон! Ничего прекраснее в жизни не видела, разве что в фильмах :) Всем советую</p>
+                  <div class="review__author">
+                    <img class="review__author-avatar" src="img/user-avatar-4.png" srcset="img/user-avatar-4.png 2x" alt="Анастасия Мей">
+                    <cite class="review__author-name">Анастасия Мей</cite>
+                  </div>
+                </blockquote>
+              </div>
+            </section>
+          </div>
+
+          <div class="slider__item" id="croatia">
+            <article class="about">
+              <h2 class="section-title about__title">Хорватия</h2>
+              <p class="section-description about__description">В Хорватии мы посетим необычайную пещеру названную Бередине. Ее подземный мир увлечет вас на 80-ти метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —  сталактитами и сталагмитами —  формировавшимися тысячи и тысячи лет.</p>
+              <button class="button about__button">купить тур сейчас</button>
+            </article>
+
+            <section class="review review--croatia">
+              <div class="review__wrapper">
+                <h3 class="review__title">Отзывы</h3>
+                <blockquote class="review__content">
+                  <p class="review__text">Мы поехали всей семьей, я, моя жена и родители. Пещера просто незабываема! А то, что все это формировалось тысячелетиями, мега необычно. Первоначально даже не верилось, но натур ни с чем не спутать по итогу :)</p>
+                  <div class="review__author">
+                    <img class="review__author-avatar" src="img/user-avatar-5.png" srcset="img/user-avatar-5.png 2x" alt="Владимир Мулицин">
+                    <cite class="review__author-name">Владимир Мулицин</cite>
                   </div>
                 </blockquote>
               </div>
@@ -187,7 +285,7 @@
                   Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
-              <button class="card__button button">купить тур сейчас</button>
+              <button class="card__button button" type="button">купить тур сейчас</button>
             </li>
             <li class="price__item card">
               <div class="card__header">
@@ -226,26 +324,27 @@
                   Экскурсии по удивительно красивым местам Европы
                 </li>
               </ul>
-              <button class="card__button button">купить тур сейчас</button>
+              <button class="card__button button" type="button">купить тур сейчас</button>
             </li>
           </ul>
         </section>
       </div>
 
       <section class="feedback-form">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
         <div class="feedback-form__wrapper">
           <p class="feedback-form__title">У Вас остались вопросы?</p>
           <p class="feedback-form__desc">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
           <form class="form" action="#" method="POST">
             <div class="form__inputs">
               <div class="form__item">
-                <label for="" class="visually-hidden">Введите 10 цифр номера</label>
+                <label for="feedback-form-phone" class="visually-hidden">Введите 10 цифр номера</label>
                 <span class="form__lable-phone">+7</span>
-                <input type="phone" class="form__input form__input-phone" placeholder="Введите 10 цифр номера" required>
+                <input type="tel" class="form__input form__input-phone" id="feedback-form-phone" placeholder="Введите 10 цифр номера" required>
               </div>
               <div class="form__item">
-                <label for="" class="visually-hidden">Ведите email</label>
-                <input type="email" class="form__input" placeholder="E-mail">
+                <label for="feedback-form-email" class="visually-hidden">Ведите email</label>
+                <input type="email" class="form__input" id="feedback-form-email" placeholder="E-mail">
               </div>
             </div>
             <button class="button form__submit" type="submit">Отправить</button>
@@ -332,23 +431,25 @@
       <form class="form modal__form" action="#" method="POST">
         <div class="form__inputs modal__inputs">
           <div class="form__item modal__item">
-            <label for="" class="visually-hidden">Введите 10 цифр номера</label>
+            <label for="modal-form__phone" class="visually-hidden">Введите 10 цифр номера</label>
             <span class="form__lable-phone">+7</span>
-            <input class="form__input form__input-phone modal__input" type="phone" placeholder="Введите 10 цифр номера" required>
+            <input class="form__input form__input-phone modal__input" id="modal-form__phone" type="tel" placeholder="Введите 10 цифр номера" required>
           </div>
           <div class="form__item modal__item">
-            <label for="" class="visually-hidden">Ведите email</label>
-            <input class="form__input modal__input" type="email" placeholder="E-mail">
+            <label for="modal-form__email" class="visually-hidden">Ведите email</label>
+            <input class="form__input modal__input" id="modal-form__email" type="email" placeholder="E-mail">
           </div>
         </div>
         <button class="button modal__submit" type="submit">Отправить</button>
       </form>
     </div>
   </section> -->
+
   <!-- <section class="modal modal--success">
     <h2 class="modal__title">Форма успешно отправлена, <br> спасибо! :)</h2>
     <button class="modal__close" aria-label="Закрыть окно"></button>
   </section> -->
+
   <script src="js/script.js"></script>
 </body>
 </html>

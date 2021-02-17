@@ -32,9 +32,6 @@
 
     &::before {
       display: none;
-      height: 235px;
-      background-image: url('../../img/hero-bg-mobile.jpg');
-      background-position: center;
     }
   }
 }
@@ -103,6 +100,10 @@
     background-position: center;
     background-size: cover;
     background-color: $default-bg;
+
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url('../../img/hero-bg-mobile@2x.jpg');
+    }
   }
 }
 

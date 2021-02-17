@@ -8,32 +8,138 @@
   background-position: top left;
   color: $text;
 
+  @media (max-width: $medium-width) {
+    width: 100%;
+    padding-top: 80px;
+    min-height: auto;
+    background-size: cover;
+  }
+
+  @media (max-width: $small-width) {
+    padding-top: 51px;
+  }
+
   &--greece {
     background-image: url('../../img/background-greece.jpg');
 
     @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
       background-image: url('../../img/background-greece@2x.jpg');
     }
-  }
 
-  @media (max-width: $medium-width) {
-    width: 100%;
-    padding-top: 80px;
-    min-height: auto;
-    background-size: cover;
-    background-image: url('../../img/background-greece-tablet.jpg');
+    @media (max-width: $medium-width) {
+      background-image: url('../../img/background-greece-tablet.jpg');
 
-    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-      background-image: url('../../img/background-greece-tablet@2x.jpg');
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-greece-tablet@2x.jpg');
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image: url('../../img/background-greece-mobile.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-greece-mobile@2x.jpg');
+      }
     }
   }
 
-  @media (max-width: $small-width) {
-    padding-top: 51px;
-    background-image: url('../../img/background-greece-mobile.jpg');
+
+  &--albania {
+    background-image: url('../../img/background-albania.jpg');
 
     @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
-      background-image: url('../../img/background-greece-mobile@2x.jpg');
+      background-image: url('../../img/background-albania@2x.jpg');
+    }
+
+    @media (max-width: $medium-width) {
+      background-image: url('../../img/background-albania-tablet.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-albania-tablet@2x.jpg');
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image: url('../../img/background-albania-mobile.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-albania-mobile@2x.jpg');
+      }
+    }
+  }
+
+
+  &--macedonia {
+    background-image: url('../../img/background-macedonia.jpg');
+
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url('../../img/background-macedonia@2x.jpg');
+    }
+
+    @media (max-width: $medium-width) {
+      background-image: url('../../img/background-macedonia-tablet.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-macedonia-tablet@2x.jpg');
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image: url('../../img/background-macedonia-mobile.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-macedonia-mobile@2x.jpg');
+      }
+    }
+  }
+
+
+  &--montenegro {
+    background-image: url('../../img/background-montenegro.jpg');
+
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url('../../img/background-montenegro@2x.jpg');
+    }
+
+    @media (max-width: $medium-width) {
+      background-image: url('../../img/background-montenegro-tablet.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-montenegro-tablet@2x.jpg');
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image: url('../../img/background-montenegro-mobile.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-montenegro-mobile@2x.jpg');
+      }
+    }
+  }
+
+
+  &--croatia {
+    background-image: url('../../img/background-croatia.jpg');
+
+    @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+      background-image: url('../../img/background-croatia@2x.jpg');
+    }
+
+    @media (max-width: $medium-width) {
+      background-image: url('../../img/background-croatia-tablet.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-croatia-tablet@2x.jpg');
+      }
+    }
+
+    @media (max-width: $small-width) {
+      background-image: url('../../img/background-croatia-mobile.jpg');
+
+      @media (min-resolution: 144dpi), (min-resolution: 2dppx) {
+        background-image: url('../../img/background-croatia-mobile@2x.jpg');
+      }
     }
   }
 }
@@ -123,6 +229,8 @@
 }
 
 .review__author-avatar {
+  width: 38px;
+  height: 38px;
   margin-right: 16px;
 
   @media (max-width: $small-width) {

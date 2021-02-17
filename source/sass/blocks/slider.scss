@@ -1,9 +1,13 @@
 .slider__item {
-  padding-top: 80px;
-  padding-bottom: 120px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 120px;
+
+  &--active {
+    display: flex;
+  }
 
   @media (max-width: $medium-width) {
     padding-top: 0;
